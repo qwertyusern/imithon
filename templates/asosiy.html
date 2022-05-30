@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asosiy</title>
+</head>
+<body>
+    <a href="{%logout%}"><button>Chiqish</button></a>
+    <h1>Asosiy sahifa:</h1>
+    {% for i in maqola%}
+    <h1>{{maqola.muallif}}</h1>
+    <br>
+    <a href="/blog/sarlavha/{{maqola.id}}"><h1>{{maqola.sarlavha}}</h1></a>
+    <hr>
+    <h3>{{maqola}}</h3>
+    <h1></h1>
+</body>
+</html>
